@@ -22,12 +22,13 @@ This Job Portal application allows users to search and apply for jobs, as well a
 - Employer dashboard for managing job postings
 - Responsive design for mobile and desktop
 
+
 ## Project Structure
 
+```text
 JOB-PORTAL/
 │
 ├── Backend/
-│   │
 │   ├── controllers/
 │   │   ├── application.controller.js
 │   │   ├── company.controller.js
@@ -62,13 +63,10 @@ JOB-PORTAL/
 │   └── package-lock.json
 │
 ├── Frontend/
-│   │
 │   ├── public/
 │   │
 │   ├── src/
-│   │   │
 │   │   ├── assets/
-│   │   │
 │   │   ├── components/
 │   │   │   ├── admin/
 │   │   │   ├── auth/
@@ -88,7 +86,6 @@ JOB-PORTAL/
 │   │   │   └── constants.js
 │   │   │
 │   │   ├── lib/
-│   │   │
 │   │   ├── App.jsx
 │   │   ├── main.jsx
 │   │   └── index.css
@@ -102,6 +99,7 @@ JOB-PORTAL/
 ├── README.md
 ├── .gitignore
 └── package-lock.json
+```
 
 ## Installation
 

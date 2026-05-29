@@ -56,6 +56,7 @@ JOB-PORTAL/
 │   │   └── db.js
 │   │
 │   ├── .env
+│   ├── .gitignore
 │   ├── index.js
 │   ├── package.json
 │   └── package-lock.json
@@ -69,9 +70,9 @@ JOB-PORTAL/
 │   │   ├── assets/
 │   │   │
 │   │   ├── components/
-│   │   │   ├── admincomponent/
-│   │   │   ├── authentication/
-│   │   │   ├── components_lite/
+│   │   │   ├── admin/
+│   │   │   ├── auth/
+│   │   │   ├── shared/
 │   │   │   └── ui/
 │   │   │
 │   │   ├── hooks/
@@ -80,20 +81,26 @@ JOB-PORTAL/
 │   │   │   ├── authSlice.js
 │   │   │   ├── jobSlice.js
 │   │   │   ├── applicationSlice.js
-│   │   │   ├── companyslice.js
+│   │   │   ├── companySlice.js
 │   │   │   └── store.js
 │   │   │
 │   │   ├── utils/
+│   │   │   └── constants.js
+│   │   │
 │   │   ├── lib/
+│   │   │
 │   │   ├── App.jsx
 │   │   ├── main.jsx
 │   │   └── index.css
 │   │
+│   ├── .env
+│   ├── .gitignore
 │   ├── package.json
 │   ├── vite.config.js
 │   └── tailwind.config.js
 │
 ├── README.md
+├── .gitignore
 └── package-lock.json
 
 ## Installation

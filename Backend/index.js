@@ -19,6 +19,7 @@ app.use(cookieParser());
 
 const corsOptions = {
   origin: ["https://job-portal-9tfe.onrender.com"],
+  origin: true,
   credentials: true,
 };
 
@@ -37,11 +38,18 @@ app.use("/api/application", applicationRoute);
 
 // code for deployment
 if (process.env.NODE_ENV === "production") {
- const dirpath = path.resolve();
- app.use(express.static('./frontend/dist'));
- app.get('*', (req, res) => {
-  res.sendFile(path.resolve(dirpath, './Frontend/dist', 'index.html'));
- });
+//  const dirpath = path.resolve();
+//  app.use(express.static('./Frontend/dist'));
+//  app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(dirpath, './Frontend/dist', 'index.html'));
+//  });
+const __dirname = path.resolve();
+
+app.use(express.static(path.join(__dirname, "Frontend/dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "Frontend/dist/index.html"));
+});
 }
 
 
